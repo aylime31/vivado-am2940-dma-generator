@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/register_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
