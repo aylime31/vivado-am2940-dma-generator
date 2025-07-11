@@ -21,15 +21,15 @@
 
 
 module register(
-input [3:0] di,
+input wire [3:0] di,
 output reg [3:0] do,
-input clk,
-input plwr
+input wire clk,
+input wire plar
 );
 
 always @(posedge clk) 
 begin 
-    if (plwr) begin
+    if (plar) begin
         do <= di;
     end
 end

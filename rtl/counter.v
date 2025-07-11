@@ -4,6 +4,7 @@ module counter(
     input wire load,
     input wire enable,
     input wire up,
+    input wire carry_in,
     input wire [3:0] data_in,
     output reg [3:0] count_out,
     output wire carry_out

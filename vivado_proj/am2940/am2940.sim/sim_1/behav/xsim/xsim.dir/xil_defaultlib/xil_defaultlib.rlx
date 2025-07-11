@@ -2,8 +2,11 @@
 2020.2
 May 22 2025
 00:13:55
-D:/AMD/vivado-am2940-dma-generator/rtl/counter.v,1752184296,verilog,,D:/AMD/vivado-am2940-dma-generator/rtl/counter_tb.v,,counter,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/vivado-am2940-dma-generator/rtl/address_path.v,1752231757,verilog,,D:/AMD/vivado-am2940-dma-generator/rtl/counter.v,,address_path,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/vivado-am2940-dma-generator/rtl/counter.v,1752229379,verilog,,D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v,,counter,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/vivado-am2940-dma-generator/rtl/counter_tb.v,1752185567,verilog,,,,counter_tb,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-D:/AMD/vivado-am2940-dma-generator/rtl/register.v,1752069212,verilog,,D:/AMD/vivado-am2940-dma-generator/rtl/register_tb.v,,register,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v,1752228476,verilog,,D:/AMD/vivado-am2940-dma-generator/rtl/register.v,,mux_2_to_1_4bit,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/vivado-am2940-dma-generator/rtl/register.v,1752232031,verilog,,D:/AMD/vivado-am2940-dma-generator/sim/address_path_tb.v,,register,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/vivado-am2940-dma-generator/rtl/register_tb.v,1752184824,verilog,,,,register_tb,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/AMD/vivado-am2940-dma-generator/sim/address_path_tb.v,1752232288,verilog,,,,address_path_tb,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
