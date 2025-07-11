@@ -1,3 +1,4 @@
+
 module word_path_tb;
     reg clk_tb, res_tb, plwr_tb, selw_tb, plwc_tb, enw_tb, incw_tb, wci_tb;
     reg [3:0] bus_data_in_tb;

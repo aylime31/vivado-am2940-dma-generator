@@ -1,3 +1,4 @@
+ 
  module mux_2_to_1_4bit (
     input wire sel, 
     input wire [3:0] d0,

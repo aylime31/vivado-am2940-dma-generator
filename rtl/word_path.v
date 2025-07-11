@@ -10,7 +10,7 @@ module word_path (
     input wire [3:0] bus_data_in,
     output wire [3:0] word_count_out,
     output wire [3:0] word_reg_out,
-    output wire wco
+    output wire     wco
 );
 
     wire [3:0] word_mux_out;

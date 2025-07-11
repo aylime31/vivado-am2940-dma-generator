@@ -8,6 +8,7 @@ module counter_tb;
     reg  [3:0] data_in_tb;
     wire [3:0] count_out_tb;
     wire carry_out_tb;
+    reg carry_in_tb;
 
     counter DUT (
         .clk(clk_tb), 
@@ -17,7 +18,8 @@ module counter_tb;
         .up(up_tb), 
         .data_in(data_in_tb), 
         .count_out(count_out_tb), 
-        .carry_out(carry_out_tb)
+        .carry_out(carry_out_tb),
+        .carry_in(carry_in_tb)
     );
 
     initial begin
@@ -27,9 +29,10 @@ module counter_tb;
 
     initial begin
     
-        
         res_tb = 1'b0; #10;
-
+        
+        carry_in_tb = 1'b1;
+        
         load_tb = 1'b1; 
         data_in_tb = 4'b1010; #10;
         load_tb = 1'b0; #10;
