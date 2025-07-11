@@ -1,5 +1,4 @@
 
-
 module counter_tb;
     reg  clk_tb;
     reg  res_tb;

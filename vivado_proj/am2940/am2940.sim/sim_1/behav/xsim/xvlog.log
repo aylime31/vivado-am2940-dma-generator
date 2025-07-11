@@ -1,2 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/sim/address_path_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module address_path_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/word_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module word_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/sim/word_path_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module word_path_tb
