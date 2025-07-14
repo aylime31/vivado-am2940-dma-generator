@@ -1,17 +1,45 @@
 Vivado Simulator v2025.1.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: D:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot done_gen_tb_behav xil_defaultlib.done_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot am2940_tb_behav xil_defaultlib.am2940_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'do' [D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v:38]
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v" Line 3. Module am2940_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/instruction_decoder.v" Line 3. Module instruction_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/ctrl_register.v" Line 1. Module ctrl_register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/address_path.v" Line 3. Module address_path doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v" Line 2. Module mux_2_to_1_4bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v" Line 2. Module mux_2_to_1_4bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/data_mux.v" Line 1. Module data_mux doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/done_gen.v" Line 2. Module done_gen doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v" Line 3. Module am2940_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/instruction_decoder.v" Line 3. Module instruction_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/ctrl_register.v" Line 1. Module ctrl_register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/address_path.v" Line 3. Module address_path doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v" Line 2. Module mux_2_to_1_4bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v" Line 2. Module mux_2_to_1_4bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/data_mux.v" Line 1. Module data_mux doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/AMD/vivado-am2940-dma-generator/rtl/done_gen.v" Line 2. Module done_gen doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.instruction_decoder
+Compiling module xil_defaultlib.ctrl_register
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux_2_to_1_4bit
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.address_path
+Compiling module xil_defaultlib.word_path
+Compiling module xil_defaultlib.data_mux
 Compiling module xil_defaultlib.done_gen
-Compiling module xil_defaultlib.done_gen_tb
+Compiling module xil_defaultlib.am2940_top
+Compiling module xil_defaultlib.am2940_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot done_gen_tb_behav
+Built simulation snapshot am2940_tb_behav

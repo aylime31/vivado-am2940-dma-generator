@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Jul 14 11:59:49 2025
+# Process ID         : 13696
+# Current directory  : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2928 D:\AMD\vivado-am2940-dma-generator\vivado_proj\am2940\am2940.xpr
+# Log file           : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/vivado.log
+# Journal file       : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940\vivado.jou
+# Running On         : ayvictus
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 33595 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35742 MB
+# Available Virtual  : 21915 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse D:/AMD/vivado-am2940-dma-generator/rtl/instruction_decoder.v
+update_compile_order -fileset sources_1
+add_files -norecurse D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/AMD/vivado-am2940-dma-generator/sim/am2940_tb.v
+update_compile_order -fileset sim_1
+set_property used_in_synthesis false [get_files  D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v]
+set_property used_in_implementation false [get_files  D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v]
+update_compile_order -fileset sources_1
+launch_simulation
+source done_gen_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top am2940_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property used_in_synthesis false [get_files  D:/AMD/vivado-am2940-dma-generator/sim/am2940_tb.v]
+set_property used_in_implementation false [get_files  D:/AMD/vivado-am2940-dma-generator/sim/am2940_tb.v]
+launch_simulation
+launch_simulation
+source am2940_tb.tcl

@@ -1,4 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/address_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module address_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module am2940_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/ctrl_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mux
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/done_gen.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module done_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/sim/done_gen_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module done_gen_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/instruction_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_to_1_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/rtl/word_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module word_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AMD/vivado-am2940-dma-generator/sim/am2940_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module am2940_tb

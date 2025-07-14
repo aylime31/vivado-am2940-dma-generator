@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../../../rtl/address_path.v" \
+"../../../../../../rtl/am2940_top.v" \
+"../../../../../../rtl/counter.v" \
+"../../../../../../rtl/ctrl_register.v" \
+"../../../../../../rtl/data_mux.v" \
+"../../../../../../rtl/done_gen.v" \
+"../../../../../../rtl/instruction_decoder.v" \
+"../../../../../../rtl/mux_2_to_1_4bit.v" \
+"../../../../../../rtl/register.v" \
+"../../../../../../rtl/word_path.v" \
+"../../../../../../sim/am2940_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,2 +1,2 @@
 Time resolution is 1 ps
-$finish called at time : 110 ns : File "D:/AMD/vivado-am2940-dma-generator/sim/done_gen_tb.v" Line 44
+$finish called at time : 150 ns : File "D:/AMD/vivado-am2940-dma-generator/sim/am2940_tb.v" Line 73
