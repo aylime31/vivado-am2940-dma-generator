@@ -1,7 +1,8 @@
+
 `default_nettype none
 
 module am2940_top (
-    input wire        TRANS,
+    input wire        clk,
     input wire        res,
     input wire [2:0]  I,
     input wire        nOEA,
@@ -20,11 +21,10 @@ module am2940_top (
     wire plar, plwr, sela, selw, plcr, plac, ena, inca, deca;
     wire resw, plwc, enw, incw, decw, oedata_internal;
     wire [1:0] seld;
-    
     wire [3:0] address_path_out;
     wire [3:0] word_path_count_out;
     wire [3:0] word_path_reg_out;
-    wire [2:0] ctrl_reg_out;
+    wire [3:0] ctrl_reg_out;
     wire [3:0] data_mux_out;
 
     instruction_decoder decoder_inst (
@@ -35,17 +35,17 @@ module am2940_top (
     );
 
     ctrl_register ctrl_register_inst (
-        .clk(TRANS), .plcr(plcr), .di(D_IN[2:0]), .do(ctrl_reg_out)
+        .clk(clk), .plcr(plcr), .di(D_IN), .do(ctrl_reg_out)
     );
 
     address_path addr_path_inst (
-        .clk(TRANS), .res(res), .plar(plar), .sela(sela), .plac(plac),
+        .clk(clk), .res(res), .plar(plar), .sela(sela), .plac(plac),
         .ena(ena), .inca(inca), .aci(ACI), .bus_data_in(D_IN),
         .address_out(address_path_out), .aco(ACO)
     );
 
     word_path word_path_inst (
-        .clk(TRANS), .res(resw), .plwr(plwr), .selw(selw), .plwc(plwc),
+        .clk(clk), .res(resw), .plwr(plwr), .selw(selw), .plwc(plwc),
         .enw(enw), .incw(incw), .wci(WCI), .bus_data_in(D_IN),
         .word_count_out(word_path_count_out), 
         .word_reg_out(word_path_reg_out), .wco(WCO)
@@ -70,3 +70,4 @@ module am2940_top (
 endmodule
 
 `default_nettype wire
+

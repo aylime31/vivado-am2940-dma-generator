@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Jul 14 13:22:41 2025
+# Process ID         : 20592
+# Current directory  : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.runs/synth_1
+# Command line       : vivado.exe -log am2940_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source am2940_top.tcl
+# Log file           : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.runs/synth_1/am2940_top.vds
+# Journal file       : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.runs/synth_1\vivado.jou
+# Running On         : ayvictus
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 33595 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35742 MB
+# Available Virtual  : 17542 MB
+#-----------------------------------------------------------
+source am2940_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.srcs/utils_1/imports/synth_1/am2940_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.srcs/utils_1/imports/synth_1/am2940_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top am2940_top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20876
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.777 ; gain = 495.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'am2940_top' [D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'instruction_decoder' [D:/AMD/vivado-am2940-dma-generator/rtl/instruction_decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/instruction_decoder.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'CR' does not match port width (3) of module 'instruction_decoder' [D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v:31]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_register' [D:/AMD/vivado-am2940-dma-generator/rtl/ctrl_register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_register' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/ctrl_register.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'di' does not match port width (3) of module 'ctrl_register' [D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v:38]
+INFO: [Synth 8-6157] synthesizing module 'address_path' [D:/AMD/vivado-am2940-dma-generator/rtl/address_path.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/AMD/vivado-am2940-dma-generator/rtl/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_to_1_4bit' [D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_to_1_4bit' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/mux_2_to_1_4bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/AMD/vivado-am2940-dma-generator/rtl/counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'address_path' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/address_path.v:3]
+INFO: [Synth 8-6157] synthesizing module 'word_path' [D:/AMD/vivado-am2940-dma-generator/rtl/word_path.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'word_path' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/word_path.v:1]
+INFO: [Synth 8-6157] synthesizing module 'data_mux' [D:/AMD/vivado-am2940-dma-generator/rtl/data_mux.v:1]
+INFO: [Synth 8-226] default block is never used [D:/AMD/vivado-am2940-dma-generator/rtl/data_mux.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'data_mux' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/data_mux.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'ctrl_reg_in' does not match port width (3) of module 'data_mux' [D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v:56]
+INFO: [Synth 8-6157] synthesizing module 'done_gen' [D:/AMD/vivado-am2940-dma-generator/rtl/done_gen.v:2]
+INFO: [Synth 8-226] default block is never used [D:/AMD/vivado-am2940-dma-generator/rtl/done_gen.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'done_gen' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/done_gen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'am2940_top' (0#1) [D:/AMD/vivado-am2940-dma-generator/rtl/am2940_top.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.082 ; gain = 601.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.082 ; gain = 601.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.082 ; gain = 601.469
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1269.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/am2940_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/am2940_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1353.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1353.586 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.586 ; gain = 685.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.586 ; gain = 685.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.586 ; gain = 685.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1353.586 ; gain = 685.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 10    
+	   7 Input    1 Bit        Muxes := 2     
+	  14 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1353.586 ; gain = 685.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1480.684 ; gain = 813.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1480.758 ; gain = 813.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1491.195 ; gain = 823.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |     5|
+|3     |LUT3  |     8|
+|4     |LUT4  |     3|
+|5     |LUT5  |    10|
+|6     |LUT6  |    17|
+|7     |FDCE  |     4|
+|8     |FDRE  |    15|
+|9     |IBUF  |    12|
+|10    |OBUF  |     8|
+|11    |OBUFT |     4|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1725.223 ; gain = 973.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1725.223 ; gain = 1057.609
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1734.371 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1738.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: afca0f90
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1738.051 ; gain = 1240.055
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1738.051 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.runs/synth_1/am2940_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file am2940_top_utilization_synth.rpt -pb am2940_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 14 13:23:07 2025...
