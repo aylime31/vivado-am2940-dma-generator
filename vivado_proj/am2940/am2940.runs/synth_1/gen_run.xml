@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1752488559" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/am2940_top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1752653908" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/am2940_top.dcp">
   <File Type="PA-TCL" Name="am2940_top.tcl"/>
   <File Type="REPORTS-TCL" Name="am2940_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="am2940_top.vds"/>
@@ -95,7 +95,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../rtl/boolean_board.xdc">
+    <File Path="$PPRDIR/../../rtl/blackboard.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -112,6 +112,7 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>
@@ -120,7 +121,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,11 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Jul 14 13:23:42 2025
+| Date         : Wed Jul 16 11:19:43 2025
 | Host         : ayvictus running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file am2940_top_control_sets_placed.rpt
 | Design       : am2940_top
-| Device       : xc7s50
+| Device       : xc7z007s
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 Control Set Information
@@ -61,8 +61,8 @@ Table of Contents
 | No           | No                    | No                     |               0 |            0 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              15 |            7 |
-| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | No                    | No                     |              15 |            6 |
+| Yes          | No                    | Yes                    |               4 |            2 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -74,10 +74,10 @@ Table of Contents
 |  Clock Signal  |                     Enable Signal                     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-------------------------------------------------------+------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG | ctrl_register_inst/plcr                               |                  |                1 |              3 |         3.00 |
+|  clk_IBUF_BUFG | addr_path_inst/addr_counter_inst/count_out[3]_i_1_n_0 | res_IBUF         |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG | addr_path_inst/addr_reg_inst/plar                     |                  |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG | ctrl_register_inst/E[0]                               |                  |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | word_path_inst/word_reg_inst/plwr                     |                  |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | addr_path_inst/addr_counter_inst/count_out[3]_i_1_n_0 | res_IBUF         |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | word_path_inst/word_reg_inst/plwr                     |                  |                1 |              4 |         4.00 |
 +----------------+-------------------------------------------------------+------------------+------------------+----------------+--------------+
 
 

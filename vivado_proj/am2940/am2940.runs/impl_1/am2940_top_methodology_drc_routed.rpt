@@ -1,11 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Jul 14 13:23:59 2025
+| Date         : Wed Jul 16 11:19:58 2025
 | Host         : ayvictus running 64-bit major release  (build 9200)
 | Command      : report_methodology -file am2940_top_methodology_drc_routed.rpt -pb am2940_top_methodology_drc_routed.pb -rpx am2940_top_methodology_drc_routed.rpx
 | Design       : am2940_top
-| Device       : xc7s50csga324-1
+| Device       : xc7z007sclg400-1
 | Speed File   : -1
 | Design State : Fully Routed
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Mon Jul 14 13:23:59 2025
+| Date             : Wed Jul 16 11:19:59 2025
 | Host             : ayvictus running 64-bit major release  (build 9200)
 | Command          : report_power -file am2940_top_power_routed.rpt -pb am2940_top_power_summary_routed.pb -rpx am2940_top_power_routed.rpx
 | Design           : am2940_top
-| Device           : xc7s50csga324-1
+| Device           : xc7z007sclg400-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.690        |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 5.596        |
-| Device Static (W)        | 0.094        |
-| Effective TJA (C/W)      | 4.9          |
-| Max Ambient (C)          | 56.9         |
-| Junction Temperature (C) | 53.1         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+---------------------------------+
+| Total On-Chip Power (W)  | 5.901 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                    |
+| Power Budget Margin (W)  | NA                              |
+| Dynamic (W)              | 5.595                           |
+| Device Static (W)        | 0.306                           |
+| Effective TJA (C/W)      | 11.5                            |
+| Max Ambient (C)          | 16.9                            |
+| Junction Temperature (C) | 93.1                            |
+| Confidence Level         | Low                             |
+| Setting File             | ---                             |
+| Simulation Activity File | ---                             |
+| Design Nets Matched      | NA                              |
++--------------------------+---------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.128 |       67 |       --- |             --- |
-|   LUT as Logic |     0.120 |       37 |     32600 |            0.11 |
+|   LUT as Logic |     0.120 |       37 |     14400 |            0.26 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Register     |     0.002 |       19 |     65200 |            0.03 |
+|   Register     |     0.002 |       19 |     28800 |            0.07 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.209 |       67 |       --- |             --- |
-| I/O            |     5.259 |       24 |       210 |           11.43 |
-| Static Power   |     0.094 |          |           |                 |
-| Total          |     5.690 |          |           |                 |
+| Signals        |     0.208 |       67 |       --- |             --- |
+| I/O            |     5.259 |       24 |       100 |           24.00 |
+| Static Power   |     0.306 |          |           |                 |
+| Total          |     5.901 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,8 +70,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.409 |       0.381 |      0.028 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.206 |       0.191 |      0.014 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.425 |       0.380 |      0.045 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.212 |       0.191 |      0.021 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     1.477 |       1.476 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -79,7 +79,16 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.156 |       0.000 |      0.156 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -106,16 +115,16 @@ Table of Contents
 2.1 Environment
 ---------------
 
-+-----------------------+--------------------------+
-| Ambient Temp (C)      | 25.0                     |
-| ThetaJA (C/W)         | 4.9                      |
-| Airflow (LFM)         | 250                      |
-| Heat Sink             | medium (Medium Profile)  |
-| ThetaSA (C/W)         | 4.6                      |
-| Board Selection       | medium (10"x10")         |
-| # of Board Layers     | 12to15 (12 to 15 Layers) |
-| Board Temperature (C) | 25.0                     |
-+-----------------------+--------------------------+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
 
 
 2.2 Clock Constraints
@@ -135,14 +144,14 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| am2940_top            |     5.596 |
-|   addr_path_inst      |     0.088 |
+| am2940_top            |     5.595 |
+|   addr_path_inst      |     0.087 |
 |     addr_counter_inst |     0.077 |
-|     addr_reg_inst     |     0.011 |
-|   ctrl_register_inst  |     0.027 |
-|   word_path_inst      |     0.094 |
-|     word_counter_inst |     0.081 |
-|     word_reg_inst     |     0.012 |
+|     addr_reg_inst     |     0.010 |
+|   ctrl_register_inst  |     0.026 |
+|   word_path_inst      |     0.100 |
+|     word_counter_inst |     0.086 |
+|     word_reg_inst     |     0.014 |
 +-----------------------+-----------+
 
 

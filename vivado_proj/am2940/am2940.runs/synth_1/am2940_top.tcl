@@ -59,7 +59,7 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7s50csga324-1
+create_project -in_memory -part xc7z007sclg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -93,8 +93,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc
-set_property used_in_implementation false [get_files D:/AMD/vivado-am2940-dma-generator/rtl/boolean_board.xdc]
+read_xdc D:/AMD/vivado-am2940-dma-generator/rtl/blackboard.xdc
+set_property used_in_implementation false [get_files D:/AMD/vivado-am2940-dma-generator/rtl/blackboard.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
@@ -102,7 +102,7 @@ read_checkpoint -auto_incremental -incremental D:/AMD/vivado-am2940-dma-generato
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top am2940_top -part xc7s50csga324-1
+synth_design -top am2940_top -part xc7z007sclg400-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

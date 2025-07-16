@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Jul 14 13:22:41 2025
-# Process ID         : 20592
+# Start of session at: Wed Jul 16 11:18:31 2025
+# Process ID         : 25080
 # Current directory  : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.runs/synth_1
 # Command line       : vivado.exe -log am2940_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source am2940_top.tcl
 # Log file           : D:/AMD/vivado-am2940-dma-generator/vivado_proj/am2940/am2940.runs/synth_1/am2940_top.vds
@@ -19,6 +19,6 @@
 # Host memory        : 33595 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 35742 MB
-# Available Virtual  : 17542 MB
+# Available Virtual  : 15893 MB
 #-----------------------------------------------------------
 source am2940_top.tcl -notrace
